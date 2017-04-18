@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'FontSGV';
+    src: url("../fonts/bebasneue-webfont.woff") format('woff'),
+         url("../fonts/bebasneue-webfont.woff") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+   background-image: url("../img/darkBlue.png") ;
+   /* background-color: black;*/
+    background-repeat: no-repeat; 
+    background-position:  center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    color: white;
+}
+/*  Overrride de la grilla*/
+div.col-lg-7 , div.col-md-7{
+  padding-right: 0px ;
+  padding-left: 0px ; 
+}
+
+.logo-sgv{
+    width:80%;
+}
+/*.log-img{
+    display:block ;
+   /* background-image: url("../img/img-login.png") ;
+    background-repeat: no-repeat;
+    background-size: cover !important; 
+    padding: 0;  
+}*/
+.img-alumno{
+   width:100%;
+}
+
+h1.tituloP{
+    color:white;
+    font-size:2em;
+    font-weight: 300;
+    font-family: 'FontSGV'; 
+}
+
+div.regUser{
+    text-align: center;
+    padding: 0;
+}
+
+
+div.contenedor{
+    border:2px solid white;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1000px;
+  }
+div#fixForm{
+  border: 1px solid red;
+  text-align: center !important;
+}
+section.row{
+  border: 1px solid red;
+  padding: 0px;
+  margin:0px;
+}
+
+.inputUser{
+    background-image: url("../img/icon-user.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll ;
+    background-position: 5px 3px;;
+    padding-left:40px;
+    height: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+.inputPass{
+    background-image: url("../img/icon-pass.png")   ;
+    background-repeat: no-repeat;
+    background-attachment:scroll ;
+    background-position: 5px 3px;;
+    padding-left:40px;
+     height: 30px;
+      width: 60%;
+      margin: 0 auto;
+}
+.textC{
+    color:white;
+    /*border:5px solid red;*/
+    font-family:  "arial";
+}
+.simpleLink{
+    color:white;
+    text-decoration: none;
+}
+.btnSubmit{
+    border: 1px solid #1f89ce;
+    color: #fff;
+    background: #2399e5;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+
+/* Overides de media querys  tomará el style hasta que llegue a ese minimo */
+@media only screen and (min-width : 480px) {
+  body{
+    background-color: red;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   body{
+    background-color: yellow;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+   body{
+    background-color: blue;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+   body{
+    background-color: peru;
+  }
+}

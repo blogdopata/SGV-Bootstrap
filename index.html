@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	SGV - USMP</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles-VC.css">
+</head>
+<body>
+
+
+   <div class="contenedor">
+		<form  method="post">
+         <section class="row">
+             <div class="col-lg-5 col-md-5 col-xs-12 regUser">
+                 <figure><img  src="img/logoSGV.png" alt="" class="logo-sgv" />  
+                      <br />   
+                     <figcaption><h1 class="tituloP">Sistemas de Gestión de Vuelos</h1></figcaption> 
+                 </figure>
+                 <br /> 
+                 <div id="fixForm">
+                    <input  type="text" placeholder="Usuario" class="inputUser form-control">
+                        <br />
+                    <input type="password"  placeholder="Constraseña" class="inputPass form-control" />
+
+                        <br />  <br /> 
+                           <p style="color:red"></p> <!-- MSJ para Validar -->
+                           <p style="color:red"></p>	<!-- MSJ para Validar -->
+                      
+                        <br />
+                        <section class="row" style="border:1px solid red;">
+                        	
+                       		<div class="col-lg-6 checkbox" style="border:1px solid red;">
+										  <label ><input type="checkbox" value="">Recordar Contraseña</label>
+									</div>
+                       		</p> 
+                       		<p class="col-lg-6" style="border:1px solid red;">
+                       			 <a  href="#" class="btnSubmit">Ingresar</a>
+                       		</p> 
+                     	</section>
+                      
+                        <hr / style="margin:0;">
+                      
+                        <p class="textC"><a href="RecuperarCuenta.html" class="simpleLink">Olvide mi contraseña </a> | 
+                            <a href="CrearCuenta.html" class="simpleLink">Crear cuenta </a>        
+                        </p>
+                      
+                        <br>
+                        <p><a href="pdf/manualJSF.pdf" target="_blank" class="textC"> 
+                                Manual de usuario
+                            </a>
+                        </p>
+                 </div>
+               
+             </div>
+
+             <div class="col-lg-7 col-md-7 log-img">
+                <img src="img/img-login.png" class="img-responsive img-alumno" alt=""> 
+             </div>
+         </section>
+		</form> 
+    </div>
+
+
+
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+	$("#boton").click(function(){
+		alert("lol");
+	})
+});
+</script>
+</script>
+</body>
+</html>
