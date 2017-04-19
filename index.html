@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>	SGV - USMP</title>
@@ -10,56 +10,60 @@
 
 
    <div class="contenedor">
-		<form  method="post">
+		
          <section class="row">
-             <div class="col-lg-5 col-md-5 col-xs-12 regUser">
-                 <figure><img  src="img/logoSGV.png" alt="" class="logo-sgv" />  
+             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 regUser">
+                 <figure>
+                 		<img  src="img/logoSGV.png" alt="" class="logo-sgv" />  
                       <br />   
                      <figcaption><h1 class="tituloP">Sistemas de Gestión de Vuelos</h1></figcaption> 
                  </figure>
                  <br /> 
-                 <div id="fixForm">
-                    <input  type="text" placeholder="Usuario" class="inputUser form-control">
-                        <br />
-                    <input type="password"  placeholder="Constraseña" class="inputPass form-control" />
+					  <form>	
+	                 <div id="fixForm">
+	                    <input  type="text" autofocus placeholder="Usuario" required class="inputUser form-control">
+	                        <br />
+	                    <input type="password" required  placeholder="Constraseña" class="inputPass form-control" />
 
-                        <br />  <br /> 
-                           <p style="color:red"></p> <!-- MSJ para Validar -->
-                           <p style="color:red"></p>	<!-- MSJ para Validar -->
-                      
-                        <br />
-                        <section class="row" style="border:1px solid red;">
-                        	
-                       		<div class="col-lg-6 checkbox" style="border:1px solid red;">
-										  <label ><input type="checkbox" value="">Recordar Contraseña</label>
-									</div>
-                       		</p> 
-                       		<p class="col-lg-6" style="border:1px solid red;">
-                       			 <a  href="#" class="btnSubmit">Ingresar</a>
-                       		</p> 
-                     	</section>
-                      
-                        <hr / style="margin:0;">
-                      
-                        <p class="textC"><a href="RecuperarCuenta.html" class="simpleLink">Olvide mi contraseña </a> | 
-                            <a href="CrearCuenta.html" class="simpleLink">Crear cuenta </a>        
-                        </p>
-                      
-                        <br>
-                        <p><a href="pdf/manualJSF.pdf" target="_blank" class="textC"> 
-                                Manual de usuario
-                            </a>
-                        </p>
-                 </div>
-               
+	                        <br />  <br /> 
+	                           <p style="color:red"></p> <!-- MSJ para Validar -->
+	                           <p style="color:red"></p>	<!-- MSJ para Validar -->
+	                      
+	                        <br />
+	                        <section class="row" >
+	                        	
+	                       		<div class=" col-xs-6 checkbox" >
+											  <label ><input type="checkbox" value="">Recordar  Contraseña</label>
+										</div>
+	                       	
+	                       		<p class="col-xs-6" >
+	                       			 <button class="btnSubmit" >Ingresar</button>
+	                       		</p> 
+	                       		
+	                     	</section>
+	                      
+	                        <hr / class="hr_">
+	                      
+	                        <p class="textC"><a href="RecuperarCuenta.html" class="simpleLink">Olvide mi contraseña </a> | 
+	                            <a href="CrearCuenta.html" class="simpleLink">Crear cuenta </a>        
+	                        </p>
+	                      
+	                        <br><br><br>
+	                        <p><a href="pdf/manualJSF.pdf" target="_blank" class="simpleLink"> 
+	                                Manual de usuario
+	                            </a>
+	                        </p>
+	                 </div>
+               	</form>
              </div>
 
-             <div class="col-lg-7 col-md-7 log-img">
+             <div class="col-lg-7 col-md-7 hidden-xs hidden-sm log-img">
                 <img src="img/img-login.png" class="img-responsive img-alumno" alt=""> 
              </div>
+
          </section>
 		</form> 
-    </div>
+   </div>
 
 
 

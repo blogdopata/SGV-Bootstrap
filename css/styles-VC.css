@@ -20,12 +20,22 @@ body{
     font-size: 16px;
     color: white;
 }
-/*  Overrride de la grilla*/
+                  /* ----  Overrride del Grid ----*/
 div.col-lg-7 , div.col-md-7{
   padding-right: 0px ;
   padding-left: 0px ; 
 }
+section.row{
+  /*border: 1px solid red;*/
+  padding: 0px;
+  margin:0px;
+}
+hr.hr_{
+  margin:0;
+}
 
+
+                  /* ----- Fin Overri de la grilla -----*/
 .logo-sgv{
     width:80%;
 }
@@ -57,17 +67,13 @@ div.contenedor{
     border:2px solid white;
     margin: 0 auto;
     margin-top: 100px;
-    width: 1000px;
+    width: 100%;
   }
 div#fixForm{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: center !important;
 }
-section.row{
-  border: 1px solid red;
-  padding: 0px;
-  margin:0px;
-}
+
 
 .inputUser{
     background-image: url("../img/icon-user.png");
@@ -89,15 +95,18 @@ section.row{
       width: 60%;
       margin: 0 auto;
 }
-.textC{
-    color:white;
-    /*border:5px solid red;*/
-    font-family:  "arial";
-}
+
 .simpleLink{
     color:white;
     text-decoration: none;
+    font-family:  "arial";
 }
+.simpleLink:hover{
+  text-decoration: none;
+  color: #555;
+
+}
+
 .btnSubmit{
     border: 1px solid #1f89ce;
     color: #fff;
@@ -115,6 +124,9 @@ section.row{
   body{
     background-color: red;
   }
+  div.contenedor{
+    /* width: 100% !important;*/
+  }
 
 }
 
@@ -122,6 +134,9 @@ section.row{
 @media only screen and (min-width : 768px) {
    body{
     background-color: yellow;
+  }
+  div.contenedor{
+ 
   }
 }
 
@@ -137,4 +152,8 @@ section.row{
    body{
     background-color: peru;
   }
+  div.contenedor{
+    width: 1000px;
+  }
+
 }
