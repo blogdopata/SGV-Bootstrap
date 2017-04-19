@@ -36,11 +36,14 @@ hr.hr_{
 }
  /* ----  FIN Overrride del Grid ----*/
 
-
+.img-banner{
+  width:100%;
+  height: 100%;
+}
 section.container{
-    width: 1000px;
+    width: 1100px;
     overflow:hidden;
-   /* border:1px solid red;*/
+    border:1px solid red;
     margin: 0 auto;
 }
 div.top{
@@ -55,34 +58,34 @@ p.textWelcome{
 }
 p.titleSist{
     color: white;
-    font-size:2em;
+    font-size:3.5em;
     text-align: center;
     font-family: 'FontSGV';
+    margin: 30px 0 0 0;
+
 }
-span.cSesion{
+a.cSesion{
     color:white;
     float:right;
+
 }
 h2.userName{
-    color:color;
+    color:black;
     text-transform: uppercase;
     background-color: white;
 }
 
 /* Estructure */
-.ui-g-3{
-    margin:0;
-    padding:0;
-}
-.menu{
+
+nav.menu{
    border:1px solid white;
- 
+    padding: 0;
 }
 .menu ul{
     list-style:none;
     border: 0px solid green;
     margin:0;
-    padding: 5px 20px;
+    padding: 0px 20px;
 }
 .menu ul li{
     margin:0;
@@ -95,6 +98,9 @@ h2.userName{
     border-bottom:1px dashed white;
     padding: 8px 0 8px 10px;
     color:white;
+}
+.menu ul li a.ultimo{
+  border-bottom: none;
 }
 .menu ul li a:hover{
    background-color: black;    

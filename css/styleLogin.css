@@ -33,9 +33,7 @@ section.row{
 hr.hr_{
   margin:0;
 }
-
-
-                  /* ----- Fin Overri de la grilla -----*/
+                  /* ----- Fin Override de la grilla -----*/
 .logo-sgv{
     width:80%;
 }
@@ -66,7 +64,7 @@ div.regUser{
 div.contenedor{
     border:2px solid white;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
   }
 div#fixForm{

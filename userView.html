@@ -4,24 +4,22 @@
 	<meta charset="UTF-8">
 	<title>	SGV - USMP</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/styleGeneral-VC.css">
+	<link rel="stylesheet" href="css/styleGeneral.css">
 
 </head>
 <body>
 
-
-   <br /><br /><br />
 <div class="container" style="border: 1px solid red">
 	<div  class="row">
-	    <div class="col-xs-12  col-lg-4" style="border: 1px solid red">
+	    <div class="col-xs-12  col-lg-4" >
 	        <p class="textWelcome">Bienvenidos</p>
 	        <h2 class="userName">
 	             JUAN PEREZ BOING FLY
 	        </h2> 
-	        <span class="cSesion">Cerrar sesión</span>
+	        <a class="cSesion" href="#">Cerrar sesión</a>
 	    </div>
 	    
-	    <div  class="col-xs-12  col-lg-offset-2 col-lg-4" style=" text-align: center; border: 1px solid red">
+	    <div  class="col-xs-12  col-lg-offset-1 col-lg-6" >
 	        <p class="titleSist">Sistema de Gestión de Vuelos</p> 
 	    </div>
 	</div>
@@ -31,14 +29,29 @@
 
 
 <section class="container">
- <nav class="menu ui-g-3"> 
+ <nav class="menu col-xs-3"> 
     <div style="position: relative; z-index: 10;">
         <div style="background-color: #000; position:absolute; z-index:-1; top:0; left:0; right:0; bottom:0; opacity:0.2;"></div>
    
         <ul>
             <li><a href="#">  Nuevo  </a></li>
             <li><a href="#"> Instructores</a></li>
-            <li><a href="#"> Alumnos EPCA</a></li>
+            <li><a href="#" class="desplegable">Opción 3</a>
+               <ul class="subnavegador">
+                  <li><a href="#" >Sub-Opción 3-1</a></li>
+                  <li><a href="#" >Sub-Opción 3-2</a></li>           
+                  <li><a href="#" >Sub-Opción 3-3</a></li>
+                  <li><a href="#" >Sub-Opción 3-4</a></li>
+              </ul>
+            </li> 
+            <li><a href="#" class="desplegable">Opción 4</a>
+               <ul class="subnavegador">
+                  <li><a href="#" >Sub-Opción 3-1</a></li>
+                  <li><a href="#" >Sub-Opción 3-2</a></li>           
+                  <li><a href="#" >Sub-Opción 3-3</a></li>
+                  <li><a href="#" >Sub-Opción 3-4</a></li>
+              </ul>
+            </li> 
             <li><a href="#"> Clientes</a></li>
             <li><a href="#"> Vehículos</a></li>
             <li><a href="#"> Programación de Vuelo</a></li>
@@ -49,17 +62,16 @@
             <li><a href="#"> Disponibilidad de Alumno</a></li>
             <li><a href="#"> Disponibilidad de Vehículo</a></li>
             <li><a href="#"> Requerimiento de horas</a></li>
-            <li><a href="#"> Reportes</a></li>
-            <li><a href="#"> Ayuda</a></li>
-            <li><a href="#"> Salir</a></li>
+            <li><a href="#" class="ultimo"> Reportes</a></li>
+           <!--  <li><a href="#"> Ayuda</a></li>
+            <li><a href="#"> Salir</a></li>  -->
         </ul>
     </div>
  </nav>  
     
-    <div class="contenido ui-g-9">
-     <img src="http://lorempixel.com/755/565/" alt="img-random" /> 
+    <div class="contenido col-xs-9">
+         <img src="http://lorempixel.com/755/552/" class="img-responsive img-banner" alt="img-random" /> 
         
-
     </div> 
 
  
@@ -68,6 +80,17 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
+<script>
+    $(document).ready(function(){ // Script del Navegador
+    $("ul.subnavegador").not('.selected').hide();
+    $("a.desplegable").click(function(e){
+      var desplegable = $(this).parent().find("ul.subnavegador");
+      $('.desplegable').parent().find("ul.subnavegador").not(desplegable).slideUp('slow');
+      desplegable.slideToggle('slow');
+      e.preventDefault();
+    })
+ });
+</script>
 <!-- <script>
 $(document).ready(function(){
 	$("#boton").click(function(){
