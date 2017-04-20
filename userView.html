@@ -34,8 +34,8 @@
         <div class="downShadow" style="background-color: #000; position:absolute; z-index:-1; top:0; left:0; right:0; bottom:0; opacity:0.2;"></div>
    
         <ul>
-            <li><a href="#" id="registrar">Nuevo  </a></li>
-            <li><a href="#"> Instructores</a></li>
+            <li><a href="#" id="registrar"> Nuevo  </a></li>
+            <li><a href="#" id="instructores"> Instructores</a></li>
             <li><a href="#" class="desplegable">Alumnos EPCA</a>
                <ul class="subnavegador">
                   <li><a href="#" >Alumnos </a></li>
@@ -99,6 +99,18 @@
     });
     });
 </script>
+
+<script type="text/javascript">
+  $('#instructores').on('click', function(){    
+        $.ajax('contents/instructores.html', {                           
+            success: function(response){    
+             $('.contenido').html($(response).find('.mBody').fadeIn());
+            },
+            type: 'GET',       
+    });
+    });
+</script>
+
 
 </body>
 </html>
