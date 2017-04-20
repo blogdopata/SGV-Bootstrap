@@ -120,7 +120,7 @@ div#fixForm{
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
 @media only screen and (min-width : 480px) {
   body{
-    background-color: red;
+    /*background-color: red;*/
   }
   div.contenedor{
     /* width: 100% !important;*/
@@ -131,7 +131,7 @@ div#fixForm{
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
    body{
-    background-color: yellow;
+   /* background-color: yellow;*/
   }
   div.contenedor{
  
@@ -141,14 +141,14 @@ div#fixForm{
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
    body{
-    background-color: blue;
+    /*background-color: blue;*/
   }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
    body{
-    background-color: peru;
+   /* background-color: peru;*/
   }
   div.contenedor{
     width: 1000px;

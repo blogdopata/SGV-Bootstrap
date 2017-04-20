@@ -30,30 +30,26 @@
 
 <section class="container">
  <nav class="menu col-xs-3"> 
-    <div style="position: relative; z-index: 10;">
-        <div style="background-color: #000; position:absolute; z-index:-1; top:0; left:0; right:0; bottom:0; opacity:0.2;"></div>
+    <div class="upShadow" style="position: relative; z-index: 10;">
+        <div class="downShadow" style="background-color: #000; position:absolute; z-index:-1; top:0; left:0; right:0; bottom:0; opacity:0.2;"></div>
    
         <ul>
-            <li><a href="#">  Nuevo  </a></li>
+            <li><a href="#" id="registrar">Nuevo  </a></li>
             <li><a href="#"> Instructores</a></li>
-            <li><a href="#" class="desplegable">Opción 3</a>
+            <li><a href="#" class="desplegable">Alumnos EPCA</a>
                <ul class="subnavegador">
-                  <li><a href="#" >Sub-Opción 3-1</a></li>
-                  <li><a href="#" >Sub-Opción 3-2</a></li>           
-                  <li><a href="#" >Sub-Opción 3-3</a></li>
-                  <li><a href="#" >Sub-Opción 3-4</a></li>
-              </ul>
-            </li> 
-            <li><a href="#" class="desplegable">Opción 4</a>
-               <ul class="subnavegador">
-                  <li><a href="#" >Sub-Opción 3-1</a></li>
-                  <li><a href="#" >Sub-Opción 3-2</a></li>           
-                  <li><a href="#" >Sub-Opción 3-3</a></li>
-                  <li><a href="#" >Sub-Opción 3-4</a></li>
+                  <li><a href="#" >Alumnos </a></li>
+                  <li><a href="#" >Alumnos Pilotos</a></li>           
+                 
               </ul>
             </li> 
             <li><a href="#"> Clientes</a></li>
-            <li><a href="#"> Vehículos</a></li>
+            <li><a href="#" class="desplegable">Vehìculos</a>
+               <ul class="subnavegador">
+                  <li><a href="#" >Simulador</a></li>
+                  <li><a href="#" >Aeronave</a></li>
+              </ul>
+            </li> 
             <li><a href="#"> Programación de Vuelo</a></li>
             <li><a href="#"> Resultado de Vuelo</a></li>
             <li><a href="#"> Control de Avance</a></li>
@@ -70,7 +66,8 @@
  </nav>  
     
     <div class="contenido col-xs-9">
-         <img src="http://lorempixel.com/755/552/" class="img-responsive img-banner" alt="img-random" /> 
+           <p>hahah</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aut libero nobis non deleniti modi atque. Ut autem, vitae est at minima cumque necessitatibus quia quos nobis sit. Quia, quis!</p>
         
     </div> 
 
@@ -91,13 +88,17 @@
     })
  });
 </script>
-<!-- <script>
-$(document).ready(function(){
-	$("#boton").click(function(){
-		alert("lol");
-	})
-});
-</script> -->
+
+<script type="text/javascript">
+  $('#registrar').on('click', function(){    
+        $.ajax('contents/registrar.html', {                           
+            success: function(response){    
+             $('.contenido').html($(response).find('.mBody').fadeIn());
+            },
+            type: 'GET',       
+    });
+    });
 </script>
+
 </body>
 </html>
