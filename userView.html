@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container" style="border: 1px solid red">
+<div class="container">
 	<div  class="row">
 	    <div class="col-xs-12  col-lg-4" >
 	        <p class="textWelcome">Bienvenidos</p>
@@ -28,19 +28,19 @@
 
 
 
-<section class="container">
+<section class="container" style="border:1px solid white;">
+<div class="row" >
  <nav class="menu col-xs-3"> 
-    <div class="upShadow" style="position: relative; z-index: 10;">
-        <div class="downShadow" style="background-color: #000; position:absolute; z-index:-1; top:0; left:0; right:0; bottom:0; opacity:0.2;"></div>
+    <div class="upShadow">
+        <div style="background-color: #000;position:absolute;z-index:-1; top:0; left:0;right:0;bottom:0;opacity:0.2;"></div>
    
         <ul>
-            <li><a href="#" id="registrar"> Nuevo  </a></li>
+            <li><a href="#" id="registrar"> Nuevo </a></li>
             <li><a href="#" id="instructores"> Instructores</a></li>
             <li><a href="#" class="desplegable">Alumnos EPCA</a>
                <ul class="subnavegador">
                   <li><a href="#" >Alumnos </a></li>
-                  <li><a href="#" >Alumnos Pilotos</a></li>           
-                 
+                  <li><a href="#" >Alumnos Pilotos</a></li> 
               </ul>
             </li> 
             <li><a href="#"> Clientes</a></li>
@@ -65,51 +65,26 @@
     </div>
  </nav>  
     
-    <div class="contenido col-xs-9">
-           <p>hahah</p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aut libero nobis non deleniti modi atque. Ut autem, vitae est at minima cumque necessitatibus quia quos nobis sit. Quia, quis!</p>
-        
-    </div> 
+  <div class="col-xs-9">
 
- 
+      <div class="contenido">
+        <img src="img/banner-alumno.jpg" class="img-responsive">  
+      </div>  
+  </div> 
+
+</div>
 </section>
 
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
-<script>
-    $(document).ready(function(){ // Script del Navegador
-    $("ul.subnavegador").not('.selected').hide();
-    $("a.desplegable").click(function(e){
-      var desplegable = $(this).parent().find("ul.subnavegador");
-      $('.desplegable').parent().find("ul.subnavegador").not(desplegable).slideUp('slow');
-      desplegable.slideToggle('slow');
-      e.preventDefault();
-    })
- });
-</script>
+<script src="js/callBacks.js"></script>
+<script src="js/items.js"></script>
 
-<script type="text/javascript">
-  $('#registrar').on('click', function(){    
-        $.ajax('contents/registrar.html', {                           
-            success: function(response){    
-             $('.contenido').html($(response).find('.mBody').fadeIn());
-            },
-            type: 'GET',       
-    });
-    });
-</script>
+    
 
-<script type="text/javascript">
-  $('#instructores').on('click', function(){    
-        $.ajax('contents/instructores.html', {                           
-            success: function(response){    
-             $('.contenido').html($(response).find('.mBody').fadeIn());
-            },
-            type: 'GET',       
-    });
-    });
-</script>
+
+
 
 
 </body>
