@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     font-size: 16px;
-    color: white;
+   
 }
 
               /* ----  Overrride del Grid --- */
@@ -27,12 +27,24 @@ div.col-lg-7 , div.col-md-7{
   padding-left: 0px ; 
 }
 div.row{
-
+  
   padding: 0px;
   margin:0px;
 }
 hr.hr_{
   margin:0;
+}
+hr._hr{
+  text-align:center;
+  width:97%;
+  border:1px solid threedface;
+  color:black;
+  background-color:black;
+  margin: 8px 5px;
+}
+div.btns{
+  /*border: 1px solid red;*/
+  margin:4px 0;
 }
           /* ----  FIN Overrride del Grid ----*/
 
@@ -132,13 +144,24 @@ legend.scheduler-border {
     color: black;
     font-family:"Helvetica";
     font-weight: bold;
+    margin-left:10px;
     
 } 
+label.lbl{
+  color:black;
+}
+input.inputT{
+  border-radius:4px;
+}
+input.inputD{
+  width:400px;
+  border-radius:4px;
+}
 /* ---- FIN Contenido  multiVistas ----*/
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
 @media only screen and (min-width : 480px) {
   body{
-    background-color: red;
+    /*  background-color: red;*/
   }
   div.contenedor{
     /* width: 100% !important;*/
@@ -149,27 +172,28 @@ legend.scheduler-border {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
    body{
-    background-color: yellow;
+    /*  background-color: yellow;*/
   }
   div.contenedor{
  
   }
+  
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
    body{
-    background-color: blue;
+    /*  background-color: blue;*/
   }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
    body{
-    background-color: peru;
+    /*  background-color: peru;*/
   }
   div.contenedor{
-    width: 1000px;
+    
   }
 
 }
