@@ -5,25 +5,230 @@
 		<form method="post">
 		 <fieldset>
 		  <legend class="scheduler-border">Instructores</legend>
-		  <div class="row">
-		  	  <div class="col-xs-3  ">
-		  	  		<label class="lbl" >Nombre:</label>
-		  	  		<input type="text" name="nombre" required class="inputT">
-		  	  </div>
-		  	  <div class="col-xs-3 col-lg-offset-1">
-			  	  	<label class="lbl" >Apellido Paterno:</label>
-			  	  	<input type="text" required name="apePat" class="inputT">
-		  	  </div>
-		  	  <div class="col-xs-3 col-lg-offset-1">
-			  	  	<label class="lbl">Apellido Materno:</label>
-			  	  	<input type="text"   required name="apeMat" class="inputT">
-		  	  </div>
-		  </div>
-		
+		  <!-- 	<div class="row">
+	        <div class="col-xs-offset-2 col-xs-8">
+	    		
+	            <div id="custom-search-input">
+	                <div class="input-group col-xs-12">
+	                    <input type="text" class="form-control inputB" placeholder="Ingrese Nro. documento o apellidos" />
+	                    <span class="input-group-btn">
+	                        <button class="btn btn-info btn-lg" type="button">
+	                            Buscar
+	                        </button>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+			</div> -->
+			<br>
+			<div class="row">
+	       <!-- <div class="col-xs-6">
+	       	<p>Mostrar numero de elementos <input type="number" placeholder="15" class="inputN" min="-9999" max="9999"></p> 
+	       </div>-->
+	        <div class="col-xs-offset-7 col-xs-4">
+	       	<p class="downLista"><b>Descargar:</b>  <a href="#"><img src="img/img-pdf.png" class="img-icons" alt="img-pdf"></a>
+	       						<a href="#"><img src="img/img-excel.png" class="img-icons" alt="img-excel"></a>
+	       	</p>
+	       </div>
+			</div>
+
+
+			<table id="example" class="display" cellspacing="0" width="95%">
+        <thead>
+            <tr>
+                <th>Nro. Documento</th>
+                <th>Apelldios y Nombres</th>
+                <th>Cargo</th>
+                <th>Nro. Licencia</th>
+                <th>Certificado Medico</th>
+                <th> Modificar </th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>08752336</td>
+                <td>Huaman Mosquera Jesùs</td>
+                <td>Piloto Privado</td>
+                <td>PP2577</td>
+                <td>31/01/2017</td>
+                <td>
+						<a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             <tr>
+                <td>08323045</td>
+                <td>Olivares Pomareda Lilian Cèfora</td>
+                <td>Piloto Instructor</td>
+                <td>P1017</td>
+                <td>31/03/2017</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             <tr>
+                <td>42271853</td>
+                <td>Paliza Marcos Marvin Renee</td>
+                <td>Piloto Instructor</td>
+                <td>P1085</td>
+                 <td>31/10/2017</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             <tr>
+                <td>40266513</td>
+                <td>Saenz Bartens Mario Alberto</td>
+                <td>Piloto Instructor</td>
+                <td>PI124</td>
+                 <td>30/04/2017</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             <tr>
+                <td>09336843</td>
+                <td>Gamero Rengifo Luis Fernando</td>
+                <td>Piloto Instructor</td>
+                <td>PI081</td>
+                 <td>30/06/2017</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             <tr>
+                <td>45720421</td>
+                <td>San Martin Beraun Gerardo Grober Polo</td>
+                <td>Piloto Comercial</td>
+                <td>PC2631</td>
+                <td>31/01/2016</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>06930714</td>
+                <td>Gomez Barrientos Maximiliano</td>
+                <td>Tecnico en Mnto</td>
+                <td>1396</td>
+                <td>N/A</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>04318736</td>
+                <td>Felix Maravi Diego Alberto</td>
+                <td>Piloto Instructor</td>
+                <td>PI019</td>
+                 <td>31/01/2016</td>
+                <td>
+						 <a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>45347655</td>
+                <td>Victor Caballero</td>
+                <td>4552151</td>
+                <td>PP453475</td>
+                <td>04/04/2017</td>
+                <td >
+						<a href="#" class="icon-img-margin"><img src="img/img-ficha.png"  alt="img-ficha"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-edit.png"   alt="img-edit"></a>
+	       			 <a href="#" class="icon-img-margin" ><img src="img/img-block.png"   alt="img-block"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>45347655</td>
+                <td>Victor Caballero</td>
+                <td>4552151</td>
+                <td>PP453475</td>
+                 <td>04/04/2017</td>
+                <td>
+						<a href="#" class="icon-img-margin"><img src="img/img-ficha.png"  alt="img-ficha"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-edit.png"   alt="img-edit"></a>
+	       			 <a href="#" class="icon-img-margin" ><img src="img/img-block.png"   alt="img-block"></a>
+                </td>
+            </tr>
+             <tr>
+                <td>45347655</td>
+                <td>Victor Caballero</td>
+                <td>4552151</td>
+                <td>PP453475</td>
+                <td>04/04/2017</td>
+                <td>
+						<a href="#" class="icon-img-margin"><img src="img/img-ficha.png"  alt="img-ficha"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-edit.png"   alt="img-edit"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-block.png"   alt="img-block"></a>
+                </td>
+            </tr>
+             <tr>
+                <td>45347655</td>
+                <td>Victor Caballero</td>
+                <td>4552151</td>
+                <td>PP453475</td>
+                <td>04/04/2017</td>
+                <td>
+						<a href="#" class="icon-img-margin"><img src="img/img-ficha.png"  alt="img-ficha"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-edit.png"   alt="img-edit"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-block.png"   alt="img-block"></a>
+                </td>
+            </tr>
+             <tr>
+                <td>45347655</td>
+                <td>Victor Caballero</td>
+                <td>4552151</td>
+                <td>PP453475</td>
+                <td>04/04/2017</td>
+                <td>
+						<a href="#" class="icon-img-margin"><img src="img/img-ficha.png"  alt="img-ficha"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-edit.png"   alt="img-edit"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-block.png"   alt="img-block"></a>
+                </td>
+            </tr>
+             <tr>
+                <td>45347655</td>
+                <td>Victor Caballero</td>
+                <td>4552151</td>
+                <td>PP453475</td>
+                <td>04/04/2017</td>
+                <td>
+						<a href="#" class="icon-img-margin"><img src="img/img-ficha.png"  alt="img-ficha"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-edit.png"   alt="img-edit"></a>
+	       			 <a href="#" class="icon-img-margin"><img src="img/img-block.png"   alt="img-block"></a>
+                </td>
+            </tr>
+            
+           
+        </tbody>
+    </table>
+
 
 		  
 		 </fieldset>
 		</form>
+
+<script>
+    $(document).ready(function() {
+      $('#example').DataTable();
+  } );
+  </script>
 	</div>
 </div>
 

@@ -46,14 +46,14 @@ div.btns{
   /*border: 1px solid red;*/
   margin:4px 0;
 }
-          /* ----  FIN Overrride del Grid ----*/
+          /* ----  FIN Overrride del Grid ---- */
 
 /*.img-banner{
   width:100%;
   height: 100%;
 }*/
 section.container{
-    width: 1100px;
+    width: 1200px;
     overflow:hidden;
     /*border:1px solid white;*/
     margin: 0 auto;
@@ -138,6 +138,7 @@ nav.menu{
   padding:5px;
 }
 /* Seteando los Field set -.- */
+
 legend.scheduler-border {
     width:inherit; /* Or auto */
     padding:5px 10px; /* To give a bit of padding on the left and right */
@@ -154,8 +155,68 @@ input.inputT{
   border-radius:4px;
 }
 input.inputD{
-  width:400px;
+  width:300px;
   border-radius:4px;
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+.inputB{
+  width:400px;
+}
+.inputN{
+  width: 50px;
+}
+.img-icons{
+  width:25px !important;
+}
+.downLista{
+  padding-left:45px;
+}
+div.dataTables_wrapper{
+  width:98%;
+  
+  margin-left:5px;
+}
+a.icon-margin{
+  margin-left:8px;
+
+}
+a.icon-img-margin{
+  
+  margin-left:10px;
+}
+a.icon-img-margin img{
+  width:15px !important;
 }
 /* ---- FIN Contenido  multiVistas ----*/
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
