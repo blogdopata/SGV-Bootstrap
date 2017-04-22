@@ -16,12 +16,13 @@ $(document).ready(function(){
               type: 'POST',       
       });
       });
-  $('#cargaData').on('click', function(){    
-          $.ajax('contents/cargaData.html', {                           
+
+  $(".contenido").on('click','#cargaData', function(){    
+           $.ajax('contents/cargaData.html', {                           
               success: function(response){    
                $('.contenido').html($(response).find('.mBody').fadeIn());
               },
-              type: 'POST',       
+              type: 'POST',    
       });
       });
 
