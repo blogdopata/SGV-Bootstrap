@@ -9,15 +9,20 @@ $(document).ready(function(){
     });
 
   $('#instructores').on('click', function(){    
-        $.ajax('contents/instructores.html', {                           
-            success: function(response){    
-             $('.contenido').html($(response).find('.mBody').fadeIn());
-            },
-            type: 'POST',       
-    });
-    });
-
-
-
+          $.ajax('contents/instructores.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST',       
+      });
+      });
+  $('#cargaData').on('click', function(){    
+          $.ajax('contents/cargaData.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST',       
+      });
+      });
 
 });

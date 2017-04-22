@@ -54,7 +54,7 @@
                 <td>31/01/2017</td>
                 <td>
 						<a href="#" class="glyphicon glyphicon-list-alt icon-margin" title="Ver Ficha" aria-hidden="true"> </a> 
-						<a href="#" class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" id="cargaData" onclick='dataTest()' class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
 						<a href="#" class="glyphicon glyphicon-ban-circle icon-margin" title="Block" aria-hidden="true"> </a> 
                 </td>
             </tr>
@@ -224,11 +224,20 @@
 		 </fieldset>
 		</form>
 
+
 <script>
-    $(document).ready(function() {
+
+	
+  $(document).ready(function() {
       $('#example').DataTable();
   } );
-  </script>
+
+</script>
+
+
 	</div>
+	
 </div>
 
+
+		

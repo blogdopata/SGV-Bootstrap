@@ -1,0 +1,169 @@
+
+<div class="contenido">
+		
+	<div class="mBody">
+		<form method="post">
+		 <fieldset>
+		  <legend class="scheduler-border">Registrar</legend>
+		  <div class="row">
+		  	  <div class="col-xs-3  ">
+		  	  		<label class="lbl" >Nombre:</label>
+		  	  		<input type="text" name="nombre" required class="inputT">
+		  	  </div>
+		  	  <div class="col-xs-3 col-lg-offset-1">
+			  	  	<label class="lbl" >Apellido Paterno:</label>
+			  	  	<input type="text" required name="apePat" class="inputT">
+		  	  </div>
+		  	  <div class="col-xs-3 col-lg-offset-1">
+			  	  	<label class="lbl">Apellido Materno:</label>
+			  	  	<input type="text"   required name="apeMat" class="inputT">
+		  	  </div>
+		  </div>
+			<br>
+		  <div class="row">
+		  	  <div class="col-xs-3  ">
+		  	  	<label class="lbl"  for="sel1">Tipo de Documento:</label>
+			      <select required class="form-control" id="sel1">
+			        <option value="">Seleccione</option>
+			        <option value="dni">DNI</option>
+			        <option value="carnetExt">Carnet de Extranjeria</option>
+			        <option value="pasaporte">Pasaporte</option>
+      			</select>
+		  	  </div>
+		  	  <div class="col-xs-3 col-lg-offset-1">
+		  	  	<label class="lbl">Nro. Documento:</label>
+		  	  	<input type="number" required name="nroDNI" class="inputT">
+		  	  </div>
+		  	  <div class="col-xs-4 col-lg-offset-1">
+		  	  	<label class="lbl">Fecha de Nacimiento:</label>
+		  	  	<input type="date" required placeholder="dd/mm/aaaa/"  max="2005-12-31" class="inputT">
+		  	  </div>
+		  </div>
+		  
+		  <br>
+		  <div class="row">
+		  	  <div class="col-xs-4">
+		  	  	<label class="lbl"  >Sexo:</label> <br>
+			      <div class="radio-inline">
+					  <label><input type="radio" required name="optradio" >Masculino</label>
+				  </div>
+				<div class="radio-inline">
+				  <label><input type="radio" name="optradio" >Femenino</label>
+				</div>
+		  	  </div>
+
+		  	  	<div class="col-xs-3  ">
+		  	  	<label class="lbl"  for="sel5">Distrito:</label>
+			      <select required class="form-control" id="sel5">
+			        <option value="">Seleccione</option>
+			        <option value="cliente">Lima</option>
+			        <option value="alumno">Lince</option>
+			        <option value="alumnoP">La Molina</option>
+			        <option value="alumnoP">...</option>
+      			</select>
+		  	  </div>
+		  	  <div class="col-xs-3" ">
+		  	  	<label class="lbl">Direcciòn:</label><br>
+		  	  	<input type="text" required name="direccion" class="inputD">
+		  	  </div>
+		  	  
+		  </div>
+			<br>
+		<div class="row">  	  
+		  	<div class="col-xs-3">
+		  	  	<label class="lbl">Celular:</label>
+		  	  	<input type="number" name="celular" required class="inputT">
+		  	</div>
+		  	<div class="col-xs-4 col-lg-offset-1">
+		  	  	<label class="lbl">Correo:</label>
+		  	  	<input type="email" name="mail" required class="inputT">
+		  	</div>
+		  	<div class="col-xs-3  ">
+		  	  	<label class="lbl"  for="sel2">Tipo de persona:</label>
+			      <select required class="form-control" id="sel2">
+			        <option value="">Seleccione</option>
+			        <option value="cliente">Cliente</option>
+			        <option value="alumno">Alumno</option>
+			        <option value="alumnoP">Alumno Piloto</option>
+			        <option value="instructor">Instructor</option>
+			        <option value="mnto">Mantenimiento</option>
+      			</select>
+		  	  </div>
+		  </div>
+
+		  <div class="row">  	  
+			  	<div class="col-xs-3">
+			  	  	<label class="lbl" for="sel3">Nacionalidad:</label>
+			  	  	 <select class="form-control" required  id="sel3">
+			        <option value="">Seleccione</option>
+			        <option value="arabia">Arabia</option>
+			        <option value="arg">Argentina</option>
+			        <option value="br">Brasil</option>
+			        <option value="...">...</option>			
+      			</select>
+			  	</div>
+			  	<div class="col-xs-4 col-lg-offset-1">
+			  	  	<label class="lbl">Codigo de alumno:</label>
+			  	  	<input type="text" required class="inputT">
+			  	</div>
+		  	
+		  </div>
+		  <hr class="_hr">
+		  <div class="row">  	  
+			  	<div class="col-xs-3">
+			  	<br>
+			  	  	<label class="lbl">Licencia:</label>
+			  	 
+			  	</div>
+		
+			  	<div class="col-xs-4 ">
+			  	  	<label class="lbl" for="sel4" >Tipo de Licencia:</label>
+			  	  	 <select class="form-control" required id="sel4">
+			        <option value="">Seleccione</option>
+			        <option value="alumP">Alumno Piloto</option>
+			        <option value="pilotoP">Piloto Privado</option>
+			        <option value="pilotoC">Piloto Comercial </option>
+			        <option value="pilotoIns">Piloto Instructor </option>			
+			        <option value="tecnico">Tècnico en Mnto </option>	
+      			</select>
+			  	</div>
+			  	<div class="col-xs-4">
+			  	  	<label class="lbl">Nro. Licencia:</label>
+			  	  	<input type="text" required class="inputT">
+			  	</div>
+		  	
+		  </div>
+		   <hr class="_hr">
+		  <div class="row">  	  
+			  	<div class="col-xs-3">
+			  	<br>
+			  	  	<label class="lbl">Certificado Mèdico:</label>
+			  	 
+			  	</div>
+		
+			  	<div class="col-xs-4 ">
+			  	  	<label class="lbl">Fecha de Vencimiento</label>
+			  	  	<input type="date" placeholder="dd/mm/aaaa/" required  max="2005-12-31" class="inputT">
+			  	</div>
+			  
+		  	
+		  </div>
+			 <hr class="_hr">
+			<div class="row btns">  	  
+			  	<div class="col-xs-2 col-xs-offset-2" >
+			  	
+			  	  	<input type="button" class="btn btn-primary" id="botonC" value="Cancelar"></input>
+			  	 
+			  	</div>
+		
+			  	<div class="col-xs-4  col-xs-offset-3">
+			  	  	<button class="btn btn-primary">Guardar</button>
+			  	</div>
+			  
+		  </div>	
+
+		 </fieldset>
+		</form>
+	</div>
+</div>
+
