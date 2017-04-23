@@ -7,23 +7,23 @@
 		  <legend class="scheduler-border">Editar Instructor</legend>
 		  <div class="row">
 		  	  <div class="col-xs-3  ">
-		  	  		<label class="lbl" >Nombre:</label>
-		  	  		<input type="text" name="nombre" required class="inputT">
+		  	  		<label class="lbl" for="nom">Nombre:</label>
+		  	  		<input type="text" name="nombre" id="nom" placeholder="Diego Alberto" required class="inputS" autofocus>
 		  	  </div>
 		  	  <div class="col-xs-3 col-lg-offset-1">
 			  	  	<label class="lbl" >Apellido Paterno:</label>
-			  	  	<input type="text" required name="apePat" class="inputT">
+			  	  	<input type="text" required name="apePat" placeholder="Felix" class="inputS">
 		  	  </div>
 		  	  <div class="col-xs-3 col-lg-offset-1">
 			  	  	<label class="lbl">Apellido Materno:</label>
-			  	  	<input type="text"   required name="apeMat" class="inputT">
+			  	  	<input type="text"   required name="apeMat" placeholder="Maravi" class="inputS">
 		  	  </div>
 		  </div>
 			<br>
 		  <div class="row">
 		  	  <div class="col-xs-3  ">
 		  	  	<label class="lbl"  for="sel1">Tipo de Documento:</label>
-			      <select required class="form-control" id="sel1">
+			      <select  class="form-control inputS" id="sel1"  required >
 			        <option value="">Seleccione</option>
 			        <option value="dni">DNI</option>
 			        <option value="carnetExt">Carnet de Extranjeria</option>
@@ -32,11 +32,11 @@
 		  	  </div>
 		  	  <div class="col-xs-3 col-lg-offset-1">
 		  	  	<label class="lbl">Nro. Documento:</label>
-		  	  	<input type="number" required name="nroDNI" class="inputT">
+		  	  	<input type="number" required name="nroDNI" placeholder="04318736" class="inputS">
 		  	  </div>
 		  	  <div class="col-xs-4 col-lg-offset-1">
 		  	  	<label class="lbl">Fecha de Nacimiento:</label>
-		  	  	<input type="date" required placeholder="dd/mm/aaaa/"  max="2005-12-31" class="inputT">
+		  	  	<input type="date" required placeholder="dd/mm/aaaa/"  max="2005-12-31" class="inputS">
 		  	  </div>
 		  </div>
 		  
@@ -64,7 +64,7 @@
 		  	  </div>
 		  	  <div class="col-xs-3" ">
 		  	  	<label class="lbl">Direcciòn:</label><br>
-		  	  	<input type="text" required name="direccion" class="inputD">
+		  	  	<input type="text" required name="direccion" class="inputD inputS">
 		  	  </div>
 		  	  
 		  </div>
@@ -72,15 +72,15 @@
 		<div class="row">  	  
 		  	<div class="col-xs-3">
 		  	  	<label class="lbl">Celular:</label>
-		  	  	<input type="number" name="celular" required class="inputT">
+		  	  	<input type="number" name="celular" required class="inputS">
 		  	</div>
 		  	<div class="col-xs-4 col-lg-offset-1">
 		  	  	<label class="lbl">Correo:</label>
-		  	  	<input type="email" name="mail" required class="inputT">
+		  	  	<input type="email" name="mail" required class="inputS">
 		  	</div>
 		  	<div class="col-xs-3  ">
 		  	  	<label class="lbl"  for="sel2">Tipo de persona:</label>
-			      <select required class="form-control" id="sel2">
+			      <select required class="form-control" id="sel2" class="inputS">
 			        <option value="">Seleccione</option>
 			        <option value="cliente">Cliente</option>
 			        <option value="alumno">Alumno</option>
@@ -90,7 +90,7 @@
       			</select>
 		  	  </div>
 		  </div>
-
+<br>
 		  <div class="row">  	  
 			  	<div class="col-xs-3">
 			  	  	<label class="lbl" for="sel3">Nacionalidad:</label>
@@ -104,10 +104,11 @@
 			  	</div>
 			  	<div class="col-xs-4 col-lg-offset-1">
 			  	  	<label class="lbl">Codigo de alumno:</label>
-			  	  	<input type="text" required class="inputT">
+			  	  	<input type="text" required class="inputS">
 			  	</div>
 		  	
 		  </div>
+
 		  <hr class="_hr">
 		  <div class="row">  	  
 			  	<div class="col-xs-3">
@@ -118,7 +119,7 @@
 		
 			  	<div class="col-xs-4 ">
 			  	  	<label class="lbl" for="sel4" >Tipo de Licencia:</label>
-			  	  	 <select class="form-control" required id="sel4">
+			  	  	 <select class="form-control" required id="sel4" class="inputS">
 			        <option value="">Seleccione</option>
 			        <option value="alumP">Alumno Piloto</option>
 			        <option value="pilotoP">Piloto Privado</option>
@@ -129,7 +130,7 @@
 			  	</div>
 			  	<div class="col-xs-4">
 			  	  	<label class="lbl">Nro. Licencia:</label>
-			  	  	<input type="text" required class="inputT">
+			  	  	<input type="text" required class="inputS">
 			  	</div>
 		  	
 		  </div>
@@ -143,25 +144,28 @@
 		
 			  	<div class="col-xs-4 ">
 			  	  	<label class="lbl">Fecha de Vencimiento</label>
-			  	  	<input type="date" placeholder="dd/mm/aaaa/" required  max="2005-12-31" class="inputT">
+			  	  	<input type="date" placeholder="dd/mm/aaaa/" required  max="2005-12-31" class="inputS">
 			  	</div>
 			  
 		  	
 		  </div>
-			 <hr class="_hr">
-			<div class="row btns">  	  
-			  	<div class="col-xs-2 col-xs-offset-2" >
+			<br>
+			<div class="row btns">  
+
+				<div class="col-xs-2 col-xs-offset-3" >
+			  	  	<button class="btn btn-primary">Guardar</button>
+			  	</div>	  
+
+			  	<div class="col-xs-2 col-xs-offset-1"  >
 			  	
 			  	  	<input type="button" class="btn btn-primary" id="botonC" value="Cancelar"></input>
 			  	 
 			  	</div>
 		
-			  	<div class="col-xs-4  col-xs-offset-3">
-			  	  	<button class="btn btn-primary">Guardar</button>
-			  	</div>
+			  
 			  
 		  </div>	
-
+			<br>
 		 </fieldset>
 		</form>
 	</div>

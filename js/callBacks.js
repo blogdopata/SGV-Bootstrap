@@ -4,7 +4,7 @@ $(document).ready(function(){
             success: function(response){    
              $('.contenido').html($(response).find('.mBody').fadeIn());
             },
-            type: 'POST',       
+            type: 'POST'       
     });
     });
 
@@ -13,17 +13,22 @@ $(document).ready(function(){
               success: function(response){    
                $('.contenido').html($(response).find('.mBody').fadeIn());
               },
-              type: 'POST',       
+              type: 'POST'     
       });
       });
 
-  $(".contenido").on('click','#cargaData', function(){    
-           $.ajax('contents/cargaData.html', {                           
+  $(".contenido").on('click','#editarInstructor', function(){    
+           $.ajax('contents/editarInstructor.html', {                           
               success: function(response){    
                $('.contenido').html($(response).find('.mBody').fadeIn());
               },
-              type: 'POST',    
+              type: 'POST'  
       });
       });
+
+  
+
+
+
 
 });
