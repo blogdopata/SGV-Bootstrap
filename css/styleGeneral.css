@@ -53,6 +53,7 @@ div.btns{
   height: 100%;
 }*/
 section.container{
+    /*width: 100%;*/
     width: 1200px;
     overflow:hidden;
     /*border:1px solid white;*/
@@ -66,15 +67,16 @@ div.top{
     margin: 0 auto;
 }
 p.textWelcome{
+    display: none;
     color :white;
     font-size: 3em;
 }
 p.titleSist{
     color: white;
-    font-size:3.5em;
+    font-size:2em !important;
     text-align: center;
     font-family: 'FontSGV';
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
 
 }
 a.cSesion{
@@ -225,15 +227,22 @@ a.icon-img-margin{
 a.icon-img-margin img{
   width:15px !important;
 }
+.divCenter{
+  text-align: center;
+  margin: 20px 10px;
+}
+
 /* ---- FIN Contenido  multiVistas ----*/
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
 @media only screen and (min-width : 480px) {
   body{
     /*  background-color: red;*/
   }
+
   div.contenedor{
     /* width: 100% !important;*/
   }
+   
 
 }
 
@@ -245,6 +254,22 @@ a.icon-img-margin img{
   div.contenedor{
  
   }
+  p.textWelcome{
+    display: block;
+    color :white;
+    font-size: 3em;
+}
+  p.titleSist{
+    color: white;
+    font-size:3.5em !important;
+    text-align: center;
+    font-family: 'FontSGV';
+    margin: 30px 0 0 0;
+
+  }
+  nav.nav-menu{
+    display: none;
+  }
   
 }
 
@@ -253,6 +278,7 @@ a.icon-img-margin img{
    body{
     /*  background-color: blue;*/
   }
+
 }
 
 /* Large Devices, Wide Screens */
@@ -263,6 +289,7 @@ a.icon-img-margin img{
   div.contenedor{
     
   }
+ 
 
 }
 
