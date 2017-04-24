@@ -34,7 +34,7 @@ $(document).ready(function(){
       });
       });
   $(".container").on('click','#instructores', function(){    
-           $.ajax('contents/Instructores.html', {                           
+           $.ajax('contents/instructores.html', {                           
               success: function(response){    
                $('.contenido').html($(response).find('.mBody').fadeIn());
               },
@@ -67,5 +67,12 @@ $(document).ready(function(){
       });
       });
 
-
+    $(".container").on('click','#listaSimulador', function(){    
+           $.ajax('contents/listaSimulador.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
 });
