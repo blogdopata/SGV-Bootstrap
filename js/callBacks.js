@@ -121,5 +121,27 @@ $(document).ready(function(){
       });
       });
 
+      $(".container").on('click','#editarAeronave', function(){    
+           $.ajax('contents/editarAeronave.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+      $(".container").on('click','#disponibilidadAlumno', function(){    
+           $.ajax('contents/disponibilidadAlumno.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+      
+
+
+
 
 });
