@@ -75,4 +75,51 @@ $(document).ready(function(){
               type: 'POST'  
       });
       });
+    $(".container").on('click','#registrarSimulador', function(){    
+         $.ajax('contents/registrarSimulador.html', {                           
+            success: function(response){    
+             $('.contenido').html($(response).find('.mBody').fadeIn());
+            },
+            type: 'POST'  
+    });
+    });
+    $(".container").on('click','#editarSimulador', function(){    
+         $.ajax('contents/editarSimulador.html', {                           
+            success: function(response){    
+             $('.contenido').html($(response).find('.mBody').fadeIn());
+            },
+            type: 'POST'  
+    });
+    });
+
+
+
+     $(".container").on('click','#listaAeronaves', function(){    
+           $.ajax('contents/listaAeronaves.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+     $(".container").on('click','#registrarAeronave', function(){    
+           $.ajax('contents/registrarAeronave.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+      $(".container").on('click','#detalleAeronave', function(){    
+           $.ajax('contents/detalleAeronave.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+
 });
