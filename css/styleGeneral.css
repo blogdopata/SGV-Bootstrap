@@ -234,6 +234,10 @@ a.icon-img-margin img{
 h3.titleH3{
   color:#162E6E;
 }
+table td, table th {
+  text-align: center;
+
+}
 /* ---- FIN Contenido  multiVistas ----*/
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
 @media only screen and (min-width : 480px) {

@@ -17,147 +17,204 @@
       			</select>
 		  	  </div>
 
-		  	  <div class="col-xs-4">
-		  	  		<button class="btn btn-primary" id="lol">Busqueda especial </button>
+		  	  <div class="col-xs-3 col-xs-offset-2	">
+		  	  <br>	
+		  	  		<button class="btn btn-primary" id="searchSpecial">Busqueda especial </button>
 		  	  </div>
-
-
 		  </div>  
+		  <br>	
 			<div class="row">
-		  	  <div class="col-xs-3 col-lg-offset-1">
-			  	  	<label class="lbl" >Nombre:</label>
-			  	  	<input type="text" required name="apePat" class="inputS">
-		  	  </div>
+		  	  <div class="col-xs-12">
+			  	  	<label class="lbl" for="doc">Nro de Documento:</label> 
+			  	  	<input type="text" required id="doc" name="doc" class="inputS"> <a href="#"  class="glyphicon glyphicon-search" title="Editar" aria-hidden="true"> </a>  <br><br>
+			  	  	<p><b>Apellidos y Nombres:</b> <laber>Aguilar Martinez Christian Juan Carlos</laber> 	</p>
+			  	  	<p><b>Nro. documento:</b> <laber>08752336</laber> 	</p>
+			  	  	<p><b>Lincecia:</b> <laber>Piloto Privado</laber> 	</p>
+			  	  	
+		  	  </div>	  	 
+		  </div>
+
+		  <div class="row">
+		  	   <div class="col-xs-12">
+		       	<h3 class="titleH3">Horario</h3>
+		       
+					<div class="form-group row">
+		               <label for="selectD" class="col-md-1 control-label">Día:</label>
+		               <div class="col-xs-2">
+	                    	<select  class="form-control inputS" id="selectD"  required >
+							        <option value="">Seleccione</option>
+							        <option value="lunes">Lunes</option>
+							        <option value="Martes">Martes</option>
+							        <option value="Miercoles">Miércoles</option>
+							        <option value="Miercoles">Jueves</option>
+							        <option value="Miercoles">Viernes</option>
+	      					</select>
+
+		               </div>
+		               <label for="inputDe" class="col-xs-1 control-label" style="">de:</label>
+		               <div class="col-xs-2">
+		                    <input type="text" class="inputS form-control" id="inputDe" placeholder="ingrese horario inicial">
+		               </div>
+
+		               <label for="inputFin" class="col-xs-1 control-label">hasta:</label>
+		               <div class="col-xs-2">
+		                    <input type="text" class="inputS form-control" id="inputFin" placeholder="ingrese horario final">
+		               </div>
+	                	<div class="col-xs-3">
+	                   	<button class="btn btn-primary">Agregar</button>
+                		</div>
+
+            	</div>
+		       	
+		      </div>
 		  	 
 		  </div>
 
 			<br>
 		  <div class="row">
-		  	  <div class="col-xs-3  ">
-		  	  	
+		  	  <div class="col-xs-12 ">
+		  	  		<label class="btn btn-default btn-file">
+    					<input type="file" class="inputS" hidden>
+					</label>
 		  	  </div>
 		  	 
-		  </div>
-		  
-		  <br>
-		  <div class="row">
-		  	  <div class="col-xs-4">
-		  	  	<label class="lbl"  >Sexo:</label> <br>
-			      <div class="radio-inline">
-					  <label><input type="radio" required name="optradio" >Masculino</label>
-				  </div>
-				<div class="radio-inline">
-				  <label><input type="radio" name="optradio" >Femenino</label>
-				</div>
-		  	  </div>
-
-		  	  	<div class="col-xs-3  ">
-		  	  	<label class="lbl"  for="sel5">Distrito:</label>
-			      <select required class="form-control" id="sel5">
-			        <option value="">Seleccione</option>
-			        <option value="cliente">Lima</option>
-			        <option value="alumno">Lince</option>
-			        <option value="alumnoP">La Molina</option>
-			        <option value="alumnoP">...</option>
-      			</select>
-		  	  </div>
-		  	  <div class="col-xs-3" ">
-		  	  	<label class="lbl">Direcciòn:</label><br>
-		  	  	<input type="text" required name="direccion" class="inputD inputS">
-		  	  </div>
-		  	  
-		  </div>
-			<br>
-		<div class="row">  	  
-		  	<div class="col-xs-3">
-		  	  	<label class="lbl">Celular:</label>
-		  	  	<input type="number" name="celular" required class="inputS">
-		  	</div>
-		  	<div class="col-xs-4 col-lg-offset-1">
-		  	  	<label class="lbl">Correo:</label>
-		  	  	<input type="email" name="mail" required class="inputS">
-		  	</div>
-		  	<div class="col-xs-3  ">
-		  	  	<label class="lbl"  for="sel2">Tipo de persona:</label>
-			      <select required class="form-control" id="sel2" class="inputS">
-			        <option value="">Seleccione</option>
-			        <option value="cliente">Cliente</option>
-			        <option value="alumno">Alumno</option>
-			        <option value="alumnoP">Alumno Piloto</option>
-			        <option value="instructor">Instructor</option>
-			        <option value="mnto">Mantenimiento</option>
-      			</select>
-		  	  </div>
 		  </div>
 <br>
-		  <div class="row">  	  
-			  	<div class="col-xs-3">
-			  	  	<label class="lbl" for="sel3">Nacionalidad:</label>
-			  	  	 <select class="form-control" required  id="sel3">
-			        <option value="">Seleccione</option>
-			        <option value="arabia">Arabia</option>
-			        <option value="arg">Argentina</option>
-			        <option value="br">Brasil</option>
-			        <option value="...">...</option>			
-      			</select>
-			  	</div>
-			  	<div class="col-xs-4 col-lg-offset-1">
-			  	  	<label class="lbl">Codigo de alumno:</label>
-			  	  	<input type="text" required class="inputS">
-			  	</div>
-		  	
-		  </div>
+		<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+		  <div class="table-responsive">
+			<table id="example" class="table display" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Hora Inicio</th>
+                <th>Fin</th>
+                <th>Modificar</th>     
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>08:00 </td>
+                <td>11:00</td>
+               
+                <td>
+                <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						  
+						 
+                </td>
+            </tr>
+             <tr>
+                <td>Lunes</td>
+                <td>12:45</td>
+                <td>14:00</td>
+              
+                <td>
+                <a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						 <a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						
+                </td>
+            </tr>
+             <tr>
+                <td>Martes</td>
+                <td>08:00</td>
+                <td>11:00</td>
+               
+                <td>
+					
+						<a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						
+                </td>
+            </tr>
+             <tr>
+                <td>Miercoles</td>
+                <td>08:00</td>
+                <td>11:00</td>
+               
+                <td>
+               	 <a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+						 <a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						  
+						
+                </td>
+            </tr>
+             <tr>
+                <td>Jueves</td>
+                <td>08:00</td>
+                <td>11:00</td>
+                
+                <td>
+						 
+						<a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						 
+                </td>
+            </tr>
+             <tr>
+                <td>Viernes</td>
+                <td>08:00</td>
+                <td>11:00</td>
+                
+                <td>
+						 
+						<a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a> 
+						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a>  
+						 
+                </td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>08:00</td>
+                <td>11:00</td>
+                
+                <td>
+						 
+						<a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						
+                </td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>09:00</td>
+                <td>22:00</td>
+               
+                <td>
+						 
+						<a href="#"  class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+						 
+                </td>
+            </tr>
+           
+          
+            
+           
+        </tbody>
+    </table>
+    </div>
+		  </div> <!-- Fin col-->
+		  </div><!-- Fin row-->
 
-		  <hr class="_hr">
-		  <div class="row">  	  
-			  	<div class="col-xs-3">
-			  	<br>
-			  	  	<label class="lbl">Licencia:</label>
-			  	 
-			  	</div>
-		
-			  	<div class="col-xs-4 ">
-			  	  	<label class="lbl" for="sel4" >Tipo de Licencia:</label>
-			  	  	 <select class="form-control" required id="sel4" class="inputS">
-			        <option value="">Seleccione</option>
-			        <option value="alumP">Alumno Piloto</option>
-			        <option value="pilotoP">Piloto Privado</option>
-			        <option value="pilotoC">Piloto Comercial </option>
-			        <option value="pilotoIns">Piloto Instructor </option>			
-			        <option value="tecnico">Tècnico en Mnto </option>	
-      			</select>
-			  	</div>
-			  	<div class="col-xs-4">
-			  	  	<label class="lbl">Nro. Licencia:</label>
-			  	  	<input type="text" required class="inputS">
-			  	</div>
-		  	
-		  </div>
-		   <hr class="_hr">
-		  <div class="row">  	  
-			  	<div class="col-xs-3">
-			  	<br>
-			  	  	<label class="lbl">Certificado Mèdico:</label>
-			  	 
-			  	</div>
-		
-			  	<div class="col-xs-4 ">
-			  	  	<label class="lbl">Fecha de Vencimiento</label>
-			  	  	<input type="date" placeholder="dd/mm/aaaa/" required  max="2005-12-31" class="inputS">
-			  	</div>
-			  
-		  	
-		  </div>
+
+
+
+
+		  <br>
+		 
 			<br>
 			<div class="row btns">  
 
 				<div class="col-xs-2 col-xs-offset-3" >
-			  	  	<button class="btn btn-primary">Guardar</button>
+			  	  	<button class="btn btn-primary">Cancerlar</button>
 			  	</div>	  
 
 			  	<div class="col-xs-2 col-xs-offset-1"  >
 			  	
-			  	  	<input type="button" class="btn btn-primary" id="botonC" value="Cancelar"></input>
+			  	  	<button class="btn btn-primary">Guardar</button>
 			  	 
 			  	</div>
 		
@@ -167,6 +224,20 @@
 			<br>
 		 </fieldset>
 	
+	<script>
+		 // $(document).ready(function(){
+		 // 	$("#searchSpecial").click(function(){
+		 // 		open('contents/buscaPe.html','','top=300,left=300,width=300,height=300') ; 
+		 // 	});
+		 // });
+		 // var botonP = document.getElementById("searchSpecial");
+		 // botonP.addEvenListener("click","abrir");
+			document.getElementById("searchSpecial").addEventListener("click", abrir);
+		 	function abrir(){
+		 		open('contents/searchSpecial.html','','top=300,left=300,width=700,height=320') ;
+		 	}
+	</script>	
+
 	</div>
 </div>
 
