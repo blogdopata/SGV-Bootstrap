@@ -21,10 +21,7 @@ body{
     color: white;
 }
                   /* ----  Overrride del Grid ----*/
-div.col-lg-7 , div.col-md-7{
-  padding-right: 0px ;
-  padding-left: 0px ; 
-}
+
 section.row{
   /*border: 1px solid red;*/
   padding: 0px;
@@ -32,25 +29,17 @@ section.row{
 }
 hr.hr_{
   margin:0;
+  color:white;
+  border: 2px solid white;
 }
                   /* ----- Fin Override de la grilla -----*/
 .logo-sgv{
     width:80%;
 }
-/*.log-img{
-    display:block ;
-   /* background-image: url("../img/img-login.png") ;
-    background-repeat: no-repeat;
-    background-size: cover !important; 
-    padding: 0;  
-}*/
-.img-alumno{
-   width:100%;
-}
 
 h1.tituloP{
     color:white;
-    font-size:2em;
+  font-size:3.5em;
     font-weight: 300;
     font-family: 'FontSGV'; 
 }
@@ -60,21 +49,17 @@ div.regUser{
     padding: 0;
 }
 
-
 div.contenedor{
     border:2px solid white;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 25px;
     width: 100%;
   }
-div#fixForm{
-  /*border: 1px solid red;*/
-  text-align: center !important;
-}
 
 
-.inputUser{
-    background-image: url("../img/icon-user.png");
+
+.inputPass{
+    background-image: url("../img/icon-pass.png")   ;
     background-repeat: no-repeat;
     background-attachment:scroll ;
     background-position: 5px 3px;;
@@ -82,16 +67,7 @@ div#fixForm{
     height: 30px;
     width: 60%;
     margin: 0 auto;
-}
-.inputPass{
-    background-image: url("../img/icon-pass.png")   ;
-    background-repeat: no-repeat;
-    background-attachment:scroll ;
-    background-position: 5px 3px;;
-    padding-left:40px;
-     height: 30px;
-      width: 60%;
-      margin: 0 auto;
+    display: inline-block;
 }
 
 .simpleLink{
@@ -99,6 +75,7 @@ div#fixForm{
     text-decoration: none;
     font-family:  "arial";
 }
+
 .simpleLink:hover{
   text-decoration: none;
   color: #555;
@@ -112,10 +89,16 @@ div#fixForm{
     text-decoration: none;
     padding: 5px 12px;
     border-radius: 5px;
-    margin-left: 40px;
+ 
     text-transform: uppercase;
 }
-
+.textC{
+ width: 360px;
+ padding: 5px;
+  margin: 0 auto;
+   /* border:1px solid red;*/
+    text-align: justify;
+}
 
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
 @media only screen and (min-width : 480px) {
@@ -151,7 +134,7 @@ div#fixForm{
    /* background-color: peru;*/
   }
   div.contenedor{
-    width: 1000px;
+    width: 600px;
   }
 
 }
