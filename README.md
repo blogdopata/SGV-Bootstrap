@@ -5,5 +5,6 @@ Proy / Vistas --> SGV with:
 - XMLHttpRequest
 
 Parte Front-end Total de vistas a realizar 16  ---> Spring 1
+Add views to Spring 1  ---> 5 views from login.
 
 SGV -> Sistema de Gestión de Vuelos

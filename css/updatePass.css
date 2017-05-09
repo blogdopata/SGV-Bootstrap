@@ -56,7 +56,18 @@ div.contenedor{
     width: 100%;
   }
 
+.inputUser{
+    background-image: url("../img/icon-user.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll ;
+    background-position: 5px 3px;;
+    padding-left:40px;
+    height: 30px;
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
 
+}
 
 .inputPass{
     background-image: url("../img/icon-pass.png")   ;
@@ -89,7 +100,7 @@ div.contenedor{
     text-decoration: none;
     padding: 5px 12px;
     border-radius: 5px;
- 
+    width: 300px;
     text-transform: uppercase;
 }
 .textC{
@@ -98,6 +109,12 @@ div.contenedor{
   margin: 0 auto;
    /* border:1px solid red;*/
     text-align: justify;
+}
+#msj-recovery{
+  display: none;
+  width: 360px;
+  margin: 10px auto;
+
 }
 
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
