@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>	SGV - USMP</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/updatePass.css">
+</head>
+<body>
+<br />
+
+<div class="container-fluid">
+	<div class="row">
+		<figure class="col-lg-5 hidden-xs hidden-sm" >
+     		<img  src="img/logoSGV.png" alt="" class="logo-sgv" />     
+     </figure>
+   
+   </div>
+</div>
+<div class="contenedor">
+		
+   <section class="row">
+       <div class="col-xs-12 regUser">
+            <figcaption><h1 class="tituloP">Sistemas de Gestión de Vuelos</h1></figcaption> 
+			       <br /><br />
+             <h2>Recuperar contraseña</h2>
+             
+                  <input  type="input" autofocus placeholder="Usuario" required class="inputUser form-control"> <b>*</b>
+
+                  <br /><br />
+
+                  <input type="email" required  placeholder="Email" class="inputPass form-control" /> 
+                  <b>*</b>
+                      <br /><br />
+
+                     
+                                   
+                    <p class="col-xs-12">
+                           <button class="btnSubmit" onclick="$('#msj-recovery').toggle();">Restablecer</button>
+                    </p> 
+                  <br /><br />
+                    <p id="msj-recovery">
+                      Se validará la información ingresada y se le  enviaraun link a su correo
+                      para que pueda restablecer su contraseña.
+
+                    </p>
+
+                    <p class="col-xs-12">
+                           <button class="btnSubmit" onclick="window.location.href='index.html'">Atras</button>
+                    </p> 
+                      <br />
+                  
+                      <hr class="hr_" / >
+                      <br />
+                     <p class="textC" >
+                      * Campos Obligatorios
+                     </p>
+                   
+                     <br />
+                    
+            
+         	
+       </div>
+
+    
+
+   </section>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
