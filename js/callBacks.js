@@ -139,7 +139,23 @@ $(document).ready(function(){
       });
       });
 
+      $(".container").on('click','#programacionVuelos', function(){    
+           $.ajax('contents/programacionVuelos.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
       
+       $(".container").on('click','#listaProgramacionVuelos', function(){    
+           $.ajax('contents/listaProgramacionVuelos.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
 
 
 

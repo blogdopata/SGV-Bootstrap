@@ -1,0 +1,167 @@
+
+<div class="contenido">
+		
+	<div class="mBody">
+	
+		 <fieldset>
+		  <legend class="scheduler-border">Lista de Programación de Vuelos</legend>
+		  <!-- 	<div class="row">
+	        <div class="col-xs-offset-2 col-xs-8">
+	    		
+	            <div id="custom-search-input">
+	                <div class="input-group col-xs-12">
+	                    <input type="text" class="form-control inputB" placeholder="Ingrese Nro. documento o apellidos" />
+	                    <span class="input-group-btn">
+	                        <button class="btn btn-info btn-lg" type="button">
+	                            Buscar
+	                        </button>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+			</div> -->
+			<br>
+			<div class="row">
+    	       <!-- <div class="col-xs-6">
+    	       	<p>Mostrar numero de elementos <input type="number" placeholder="15" class="inputN" min="-9999" max="9999"></p> 
+    	       </div>-->
+    	        <div class="col-xs-offset-7 col-xs-4">
+    	       	<p class="downLista"><b>Descargar:</b>  <a href="#"><img src="img/img-pdf.png" class="img-icons" alt="img-pdf"></a>
+    	       						<a href="#"><img src="img/img-excel.png" class="img-icons" alt="img-excel"></a>
+    	       	</p>
+    	       </div>
+			</div>
+
+        <div class="table-responsive">
+			<table id="example" class="table display" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Nro de orden de vuelo</th>
+                <th>Total  hrs en avión </th>
+                <th>Total hrs en simulador</th>
+                <th>Total hrs del día </th>
+                <th>Modificar</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+						
+						<a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+						<a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+                        
+                        <a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+                        <a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+                        
+                        <a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+                        <a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+                        
+                        <a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+                        <a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+                        
+                        <a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+                        <a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+                        
+                        <a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+                        <a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+            <tr>
+                <td>31/09/2017</td>
+                <td>000208</td>
+                <td>06:50</td>
+                <td>01:00</td>
+                <td>07:50</td>
+                <td>
+                        
+                        <a href="#" id="editarSimulador"  class="glyphicon glyphicon-list-alt icon-margin" title="Editar" aria-hidden="true"> </a>  
+                        <a href="#"  class="glyphicon glyphicon-pencil icon-margin" aria-hidden="true"> </a> 
+                </td>
+            </tr>
+             
+            
+           
+        </tbody>
+    </table>
+    </div>
+    <br>
+    <div class="row btns">  
+
+        <div class="col-xs-12 text-center"  >
+        
+          <button class="btn btn-primary btns" id="programacionVuelos">Nueva Orden de Vuelo</button>
+         
+        </div>
+     
+    </div>    
+          <br>
+<br>
+
+		  
+		 </fieldset>
+		
+        <script> 
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+        </script>
+      
+
+	</div>
+	
+</div>
+
+
+		

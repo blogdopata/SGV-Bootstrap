@@ -131,7 +131,7 @@ nav.menu{
   opacity:0.2;
 }
 
-/* -----FIN MENU------*/ 
+/* -----FIN MENU------ */ 
 
 /* -----Contenido  multiVistas ----*/
 .contenido{
@@ -238,6 +238,25 @@ table td, table th {
   text-align: center;
 
 }
+table.bigTable , table.bigTable th , table.bigTable td{
+  border:1px solid #152D6B !important;
+  vertical-align:middle !important; 
+}
+
+ .btn-fixMargin{
+  margin: 135px 0 0 20px;
+ }
+
+/* ---- Utilitarias -------*/
+
+.margins{
+  margin-left: 30px !important;
+}
+
+
+
+
+/* ---- Fin utilitarias-------*/
 /* ---- FIN Contenido  multiVistas ----*/
 /* Overides de media querys  tomará el style hasta que llegue a ese minimo */
 @media only screen and (min-width : 480px) {
