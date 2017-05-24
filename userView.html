@@ -11,66 +11,49 @@
 <body>
 
 <div class="container">
-	<div  class="row">
-	    <div class="col-xs-12 col-lg-4" >
-	        <p class="textWelcome">Bienvenidos</p>
+	<div  class="row" >
+	    <div class="col-xs-12 col-lg-4"  >
+	        <p class="textWelcome">Bienvenido</p>
 	        <h2 class="userName">
 	             JUAN PEREZ BOING 
 	        </h2> 
-	        <a class="cSesion" href="#">Cerrar sesión</a>
+	       <!-- <a class="cSesion" href="#">Cerrar sesión</a>-->
 	    </div>
 	    
-	    <div  class="col-xs-12  col-lg-offset-1 col-lg-6" >
-	        <p class="titleSist">Sistema de Gestión de Vuelos</p> 
+	    <div  class="col-xs-12   col-lg-8"  >
+	      <div class="row">
+         
+          <p class="col-xs-12 col-lg-10 titleSist">Sistema de Gestión de Vuelos</p> 
+
+          <div class="col-xs-12 col-lg-2" >
+           
+            <ul class="nav navbar-nav my-nav">
+              <li class="dropdown my-dropdown">
+                <a href="#" class="dropdown-toggle my-dropdown-toggle" data-toggle="dropdown">Editar Perfil <span class="glyphicon glyphicon-user pull-right"></span></a>
+                <ul class="dropdown-menu my-dropdown-menu">
+                    <li>
+                      <a href="#">Perfil <span class="glyphicon glyphicon-cog pull-right"></span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="#">Cambiar Contraseña <span class="glyphicon glyphicon-lock pull-right"></span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="http://localhost/SGView/">Salir <span class="glyphicon glyphicon-log-out pull-right"></span></a>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
 	    </div>
+
 	</div>
 </div>
 <br/>
-<!-- <nav class="navbar navbar-inverse nav-menu">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#" id="registrar">Nuevo</a></li>
-        <li><a href="#" id="instructores">Instructores</a></li>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Alumnos EPCA <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Alumnos</a></li>
-              <li><a href="#">Alumnos Pilotos</a></li>
-            </ul>
-        </li>
-         <li><a href="#" id="">Cliente</a></li>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Vehículos <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Simulador</a></li>
-              <li><a href="#">Aeronave</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Programación de Vuelo</a></li>
-        <li><a href="#">Resultado de Vuelo</a></li>
-        <li><a href="#">Control de Avance</a></li>
-        <li><a href="#">Gestión de Combustible</a></li>
-        <li><a href="#">Ficha de Alquiler</a></li>
-        <li><a href="#">Disponibilidad de Alumno</a></li>
-        <li><a href="#">Disponibilidad de Vehículo</a></li>
-        <li><a href="#">Requerimiento de horas</a></li>
-        <li><a href="#">Reportes</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Salir</a></li> 
-      </ul>
-     
-    </div>
-  </div>
-</nav> -->
+
 
 <section class="container" >
 <div class="row" >
@@ -95,7 +78,7 @@
                   <li><a href="#" id="listaAeronaves">Aeronave</a></li>
               </ul>  
             </li> 
-            <li><a href="#" id="programacionVuelos"> Programación de Vuelo</a></li>
+            <li><a href="#" id="listaProgramacionVuelos"> Programación de Vuelo</a></li>
             <li><a href="#"> Resultado de Vuelo</a></li>
             <li><a href="#"> Control de Avance</a></li>
             <li><a href="#"> Gestión de Combustible</a></li>
@@ -125,6 +108,7 @@
 <script src="js/dataTableJS.min.js"></script>
 <script src="js/callBacks.js"></script>
 <script src="js/items.js"></script>
+<!-- <script src="js/myScripts.js"></script> -->
 
 
 

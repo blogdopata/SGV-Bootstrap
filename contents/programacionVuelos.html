@@ -274,7 +274,7 @@
 			             <td colspan="13"><b>PARCIAL CESSNA</b></td>
 		                
 		                <td>01:30</td>
-		                <td colspan="2"> <a href="#" id="listaProgramacionVuelos">Programa vuelo</a></td>
+		                <td colspan="2"> <a href="#" id="showContent">Programa vuelo</a></td>
 			        </tr>   
 			                
 			        </tbody>
@@ -283,7 +283,7 @@
 		 </div> 
 	</div>	
 
-<div class="row">
+<div class="row" style="display:none" id="showMe">
 	<div class="col-xs-12">
 		<h3 class="titleH3">Hora</h3>
 		<label for="selHor">Hora:</label> <input name="selHor" id="selHor" type="text">
@@ -343,166 +343,235 @@
 			<div class="col-xs-3">
 		  	  	<button class="btn btn-primary btn-fixMargin">Agregar</button>
 		  	</div> 
-			</div>
+		</div>
 		
+	</div>
+</div>
+
+
+
+<div class="row" style="display:none" id="showMeTo">
+	<div class="col-xs-12">
+		<h3 class="titleH3">Hora</h3>
+		<label for="selHor">Hora:</label> <input name="selHor" id="selHor" type="text">
+
+		<h3 class="titleH3">Tripulación</h3>
+		<label for="selIns">Instructor:</label> <input type="text" id="selIns">  <a href="#"  class="glyphicon glyphicon-search" id="searchInstructor" title="Editar" aria-hidden="true"> </a> <input class="margins" type="radio" name="solor" value="solo"> <label>Solo</label>
+
+		<h3 class="titleH3">Simulador</h3>
+		<label for="selMat">Matrícula:</label> <input type="text" id="selMat">  <a href="#"  class="glyphicon glyphicon-search" id="searchAeronave" title="Editar" aria-hidden="true"> </a> 
+
+		<label class="margins" for="selMo">Modelo:</label> <input type="text" id="selMo"> 	
+	
+		<h3 class="titleH3">Vuelo</h3>
+
+		<div class="row">
+               
+       	<div class="col-xs-3">
+          <label for="selT">Lección: </label> 
+				<select  class="form-control inputS" id="selT" name="selT" required >
+				        <option value="">Seleccione</option>
+				        <option value="dni">Diurno</option>
+				        <option value="carnetExt">Nocturno</option>
+	      	</select>
+			</div>
+			<div class="col-xs-3">
+          <label for="selO">Zona origen: </label> 
+				<select  class="form-control inputS" id="selO"  required >
+			        <option value="">Seleccione</option>
+			        <option value="slpx">slpx</option>
+			        <option value="spso">spso</option>
+     			</select>
+			</div>
+			<div class="col-xs-3">
+          <label for="selD">Zona Destino: </label> 
+					<select  class="form-control inputS" id="selD"  required >
+			        <option value="">Seleccione</option>
+			        <option value="slpx2">slpx2</option>
+			        <option value="spso">spso</option>
+      			</select> 
+			</div>
+                
+      </div>
+
+		<div class="row">
+			<div class="col-xs-9">
+				<h3 class="titleH3">Tiempo de vuelo diurno</h3>
+				<label for="selVrf">VRF:</label> <input type="text" id="selVrf"> 
+				<label class="margins" for="selIrf">IRF:</label> <input type="text" id="selIrf"> 
+				
+				<h3 class="titleH3">Tiempo de vuelo nocturno</h3>
+				<label for="selVrf2">VRF:</label> <input type="text" id="selVrf2"> 
+				<label class="margins" for="selIrf2">IRF:</label> <input type="text" id="selIrf2"> 
+			</div>
+			<div class="col-xs-3">
+		  	  	<button class="btn btn-primary btn-fixMargin">Agregar</button>
+		  	</div> 
+		</div>
+		
+	</div>
+</div>
+
+
 		<div class="row" style="width:800px;">
 			<div class="col-xs-12">
 			<h3 class="titleH3">Simulador</h3>
-		  <div class="table-responsive">
-				<table class="table bigTable" cellspacing="0">
-			        <thead>
-			            <tr>
-			                <th rowspan="2">Hora</th>
-			                <th rowspan="2">Modelo</th>
-			                <th rowspan="2">Matrícula</th>
-			                <th rowspan="2">Alumno piloto</th>
-			                <th rowspan="2">Alumno instructor</th> 
-			                <th rowspan="2">Lección</th>      
-			                <th colspan="2">Zona</th> 
-			                <th rowspan="2">Altitud</th> 
-			                <th colspan="2">Diurno</th>
-			                <th colspan="2">Nocturno</th>
-			                <th rowspan="2">Total</th>
-			                <th rowspan="2">Observación</th>
-			                <th rowspan="2">Edición</th>
-			            </tr>
-			            <tr>
-			            	<th>Origen</th>
-			            	<th>Destino</th>
-			            	<th>VRF</th>
-			            	<th>IFR</th>
-			            	<th>VRF</th>
-			            	<th>IFR</th>
-			            </tr>
-			        </thead>
-			        
-			        <tbody>
-			        	<tr>
-			             <td>08:00</td>
-		                <td>C-72S</td>
-		                <td>OB-2080</td>
-		                <td>Aguilar Martinez</td>
-		                <td>Saenz Bartens</td> 
-		                <td>Navegacion</td>      
-		                <td>SPLX</td> 
-		                <td>SPSO</td>
-		                <td>55</td> 
-		                <td>01:30</td>
+			  <div class="table-responsive">
+					<table class="table bigTable" cellspacing="0">
+				        <thead>
+				            <tr>
+				                <th rowspan="2">Hora</th>
+				                <th rowspan="2">Modelo</th>
+				                <th rowspan="2">Matrícula</th>
+				                <th rowspan="2">Alumno piloto</th>
+				                <th rowspan="2">Alumno instructor</th> 
+				                <th rowspan="2">Lección</th>      
+				                <th colspan="2">Zona</th> 
+				                <th rowspan="2">Altitud</th> 
+				                <th colspan="2">Diurno</th>
+				                <th colspan="2">Nocturno</th>
+				                <th rowspan="2">Total</th>
+				                <th rowspan="2">Observación</th>
+				                <th rowspan="2">Edición</th>
+				            </tr>
+				            <tr>
+				            	<th>Origen</th>
+				            	<th>Destino</th>
+				            	<th>VRF</th>
+				            	<th>IFR</th>
+				            	<th>VRF</th>
+				            	<th>IFR</th>
+				            </tr>
+				        </thead>
+				        
+				        <tbody>
+				        	<tr>
+				             <td>08:00</td>
+			                <td>C-72S</td>
+			                <td>OB-2080</td>
+			                <td>Aguilar Martinez</td>
+			                <td>Saenz Bartens</td> 
+			                <td>Navegacion</td>      
+			                <td>SPLX</td> 
+			                <td>SPSO</td>
+			                <td>55</td> 
+			                <td>01:30</td>
 
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>01:00</td>
-		                <td>-</td>
-		                <td>
-		                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
-						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
-							</td>
-			        </tr>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>01:00</td>
+			                <td>-</td>
+			                <td>
+			                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+							<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+								</td>
+				        </tr>
 
-			        <tr>
-			             <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>      
-		                <td>-</td> 
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>
+				        <tr>
+				             <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>      
+			                <td>-</td> 
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>
 
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>
-		                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
-						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
-							</td>
-			        </tr>   
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>
+			                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+							<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+								</td>
+				        </tr>   
 
-			         <tr>
-			             <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>      
-		                <td>-</td> 
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>
+				         <tr>
+				             <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>      
+			                <td>-</td> 
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>
 
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>
-		                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
-						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
-							</td>
-			        </tr>   
-			         <tr>
-			             <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>      
-		                <td>-</td> 
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>
+			                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+							<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+								</td>
+				        </tr>   
+				         <tr>
+				             <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>      
+			                <td>-</td> 
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>
 
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>
-		                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
-						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
-							</td>
-			        </tr>   
-			         <tr>
-			             <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>      
-		                <td>-</td> 
-		                <td>-</td>
-		                <td>-</td> 
-		                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>
+			                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+							<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+								</td>
+				        </tr>   
+				         <tr>
+				             <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>      
+			                <td>-</td> 
+			                <td>-</td>
+			                <td>-</td> 
+			                <td>-</td>
 
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>-</td>
-		                <td>
-		                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
-						<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
-							</td>
-			        </tr>   
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>-</td>
+			                <td>
+			                 <a href="#"   class="glyphicon glyphicon-pencil icon-margin" title="Editar" aria-hidden="true"> </a>
+							<a href="#" class="glyphicon glyphicon-remove" title="Eliminar"  aria-hidden="true"> </a> 
+								</td>
+				        </tr>   
 
-			        <tr>
-			             <td colspan="13"><b>PARCIAL CESSNA</b></td>
-		                
-		                <td>01:00</td>
-		                <td colspan="2"> <a href="#">Programa vuelo</a></td>
-			        </tr>   
+				        <tr>
+				             <td colspan="13"><b>PARCIAL CESSNA</b></td>
 			                
-			        </tbody>
-			    </table>
-   		 </div>
+			                <td>01:00</td>
+			                <td colspan="2"> <a href="#" id="showContentTo">Programa vuelo</a></td>
+				        </tr>   
+				                
+				        </tbody>
+				    </table>
+	   		 </div>
 		 </div> 
-	</div>
-	 <br>	
+		</div>
+	 <br>
+
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1">
 		  <div class="table-responsive">
@@ -535,9 +604,13 @@
 		  	</div>
 
 	  </div>	
+
+		
+
+	
 			<br>
 	</fieldset>
-	
+<script src="js/myScripts.js"></script>
 <script>
 		 // $(document).ready(function(){
 		 // 	$("#searchSpecial").click(function(){
@@ -552,21 +625,34 @@
 		 //		 event.preventDefault();
 		 //		open('contents/searchSpecial.html','','top=300,left=300,width=700,height=320');
 		 //	}
-			document.getElementById("searchSpecial").addEventListener("click", busquedaSpecial);
-		 	function busquedaSpecial(){
-		 		open('contents/searchSpecial.html','','top=300,left=300,width=700,height=320');
-		 	}
+			// document.getElementById("searchSpecial").addEventListener("click", busquedaSpecial);
+		 // 	function busquedaSpecial(){
+		 // 		open('contents/searchSpecial.html','','top=300,left=300,width=700,height=320');
+		 // 	}
 		 	
-		 	document.getElementById("searchInstructor").addEventListener("click", busquedaInstructor);
-		 	function busquedaInstructor(){
-		 		open('contents/searchInstructor.html','','top=300,left=300,width=700,height=320') ;
-		 	}
+		 // 	document.getElementById("searchInstructor").addEventListener("click", busquedaInstructor);
+		 // 	function busquedaInstructor(){
+		 // 		open('contents/searchInstructor.html','','top=300,left=300,width=700,height=320') ;
+		 // 	}
 
-		 	document.getElementById("searchAeronave").addEventListener("click", busquedaAeronave);
-		 	function busquedaAeronave(){
-		 		open('contents/searchAeronave.html','','top=300,left=300,width=700,height=320') ;
-		 	}
+		 // 	document.getElementById("searchAeronave").addEventListener("click", busquedaAeronave);
+		 // 	function busquedaAeronave(){
+		 // 		open('contents/searchAeronave.html','','top=300,left=300,width=700,height=320') ;
+		 // 	}
+		 		
+		 //     $('#showContent').on('click',function(event){
+		 //     	event.preventDefault();			    
+   //    		$('#showMe').toggle('slow');
+   				
+			//  });
 
+		 //      $('#showContentTo').on('click',function(event){
+		 //     	event.preventDefault();			    
+   //    		$('#showMeTo').toggle('slow');
+   				
+			//  });
+			
+			
 
 </script>
 
