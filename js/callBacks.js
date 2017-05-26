@@ -157,7 +157,41 @@ $(document).ready(function(){
       });
       });
 
+      $(".container").on('click','#cambiarPass', function(){    
+           $.ajax('contents/cambiarPass.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
 
+       $(".container").on('click','#resultadoVuelo', function(){    
+           $.ajax('contents/resultadoVuelo.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+       $(".container").on('click','#detalleResultadoVuelo', function(){    
+           $.ajax('contents/detalleResultadoVuelo.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+       $(".container").on('click','#gestionCombustible', function(){    
+           $.ajax('contents/gestionCombustible.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
 
 
 
