@@ -193,6 +193,51 @@ $(document).ready(function(){
       });
       });
 
+       $(".container").on('click','#addCombustible', function(){    
+           $.ajax('contents/addCombustible.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+       $(".container").on('click','#detalleCombustible', function(){    
+           $.ajax('contents/detalleCombustible.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+        $(".container").on('click','#controlAvance', function(){    
+           $.ajax('contents/controlAvance.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+         $(".container").on('click','#requerimientoHrs', function(){    
+           $.ajax('contents/requerimientoHrs.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
+          $(".container").on('click','#addRequerimientoHrs', function(){    
+           $.ajax('contents/addRequerimientoHrs.html', {                           
+              success: function(response){    
+               $('.contenido').html($(response).find('.mBody').fadeIn());
+              },
+              type: 'POST'  
+      });
+      });
+
 
 
 });

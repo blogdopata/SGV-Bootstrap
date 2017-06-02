@@ -1,0 +1,129 @@
+
+<div class="contenido">
+		
+	<div class="mBody">
+		
+		 <fieldset>
+		  <legend class="scheduler-border">Requemiento de Horas</legend>
+		
+			<br>
+            <h3 align="center">Requemiento de Horas</h3>
+            <br>
+        <div class="row">
+			<div class="col-xs-8" >
+                    <div class="row">
+                        <div class="col-xs-4" >
+                                <label class="lbl"  for="sel1">Licencia: </label>
+                        </div>
+                        <div class="col-xs-6" >
+                            <select  class="form-control inputS" id="sel1"  required >
+                                <option value="">Seleccione</option>
+                                <option value="piloto-privado">Piloto Privado</option>
+                                <option value="piloto-comercial">Piloto Comercial</option>
+                               
+                            </select>
+                        </div>  
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-4" >
+                                <label class="lbl" for="doc">Fecha de inicio:</label> 
+                        </div>
+                    <div class="col-xs-6" > 
+                            <input type="date" name="fechaInicio">
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-xs-4">
+                  <br>  
+                       
+                        <p  class="text-center">
+                        <b>Descargar:</b><a href="#"><img src="img/img-pdf.png" class="img-icons" alt="img-pdf"></a>
+                                        <a href="#"><img src="img/img-excel.png" class="img-icons" alt="img-excel"></a>
+                  </p>
+                </div>
+
+         </div>     
+         <br>
+        <div class="row">
+               <div class="col-xs-12">
+                
+                
+                        <table  class="table table-bordered" >
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-center">Contacto</th>
+                            <th colspan="2" class="text-center">Instrumentos</th>
+                            <th colspan="2" class="text-center">Nocturno</th>
+                            <th colspan="2" class="text-center">Navegaciòn</th>
+                            <th colspan="2" class="text-center">Subtotal</th>                   
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="text-center">DM</td>
+                            <td class="text-center">PIC</td>
+                            <td class="text-center">DM</td>
+                            <td class="text-center">PIC</td>
+                            <td class="text-center">DM</td>
+                            <td class="text-center">PIC</td>
+                            <td class="text-center">DM</td>
+                            <td class="text-center">PIC</td>
+                            <td class="text-center">DM</td>
+                            <td class="text-center">PIC</td>                                            
+                        </tr>
+                         <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr> 
+                        </tbody>
+                    </table>
+               </div>   
+        </div>
+        
+        <div class="row">
+               <div class="col-xs-12">
+                <h3 class="titleH3">Descripción: </h3>
+                     <textarea placeholder="describa" rows="6" cols="50" >
+                    </textarea>   
+                </div>  
+        </div>
+    
+<br>
+<br>
+<div class="row btns">  
+
+        <div class="col-xs-12 text-center"  >
+          <button class="btn btn-primary btns" id="#">Guardar</button>
+        </div>
+</div>    
+
+		<br><br>  
+		 </fieldset>
+		
+        <script> 
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+
+
+        </script>
+      
+
+	</div>
+	
+</div>
+
+
+		

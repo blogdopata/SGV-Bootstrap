@@ -242,6 +242,10 @@ table.bigTable , table.bigTable th , table.bigTable td{
   border:1px solid #152D6B !important;
   vertical-align:middle !important; 
 }
+table.bigTable th{
+  font-weight: bold;
+}
+
 
  .btn-fixMargin{
   margin: 135px 0 0 20px;
